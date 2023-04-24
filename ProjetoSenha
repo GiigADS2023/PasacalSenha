@@ -1,0 +1,25 @@
+Program Pzim ;
+var
+contTentativa: Integer;
+senha: String;
+Begin
+  Writeln('Senha:');
+  readln(senha);
+  contTentativa := 0;
+  
+  while(contTentativa < 2) do
+  begin
+  	if(senha <> 'oi') then   
+  	begin
+  	writeln('Acesso Negado');
+  	contTentativa := contTentativa + 1;
+  	end
+  		else
+			begin
+			writeln('Acesso Permitido');
+			end;
+	Writeln('Senha:');
+  readln(senha);    
+  end;  
+	readkey;      
+End.
